@@ -201,8 +201,9 @@ span {
   font-weight: 600;
   white-space: nowrap;
   overflow: hidden;
-  min-width: 320px; /* بیشترش کن تا جا بشه */
-  max-width: 100%;
+  width: 22ch; /* عرض ثابت معادل طولانی‌ترین متن */
+  display: inline-block;
+  text-align: left;
 }
 .text-animation span {
   position: relative;
@@ -696,6 +697,23 @@ span {
   .services-container {
     grid-template-columns: repeat(1, 1fr);
   }
+  .btn-group {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1.5rem;
+    padding: 3rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .social-icons a {
+    margin: 0.5rem;
+  }
 }
 
 /* غیرفعال‌سازی گرید قبلی */
@@ -773,10 +791,15 @@ body {
 @media (max-width: 600px) {
   .home {
     flex-direction: column-reverse;
-    gap: 4rem;
-    padding: 5rem 2rem;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    gap: 2rem;
   }
-
+  .home-content {
+    align-items: center;
+    text-align: center;
+  }
   .home-img img {
     width: 70vw;
     margin-top: 3rem;
@@ -790,13 +813,6 @@ body {
   .home-content h3 {
     font-size: 2.4rem;
     text-align: center;
-  }
-
-  .btn-group {
-    justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
   }
 
   .services-container {
@@ -827,5 +843,36 @@ body {
 
   .services-info p {
     font-size: 1.4rem;
+  }
+  .home-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-animation {
+    width: 22ch;
+    font-size: 2.4rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1.5rem;
+    padding: 3rem;
+  }
+
+  .btn-group a {
+    width: 80%;
+  }
+
+  .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .social-icons a {
+    margin: 0.5rem;
   }
 }
