@@ -1,221 +1,374 @@
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reza GHanbari</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
 
-</head>
-<body>
+    <!-- Link to main CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Boxicons icon library -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts: Poppins (for English text) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts: Vazirmatn (for Persian text) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ======= Header section with logo and navigation ======= -->
     <header class="header">
-        <a href="#home" class="logo">رضا <span>قنبری</span></a>
-        
-        <i class='bx bx-menu' id="menu-icon"></i>
+      <a href="#home" class="logo">رضا <span>قنبری</span></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-        <nav class="navbar">
-            <a href="#home" class="active">خانه</a>
-            <a href="#education">تحصیلات</a>
-            <a href="#services">خدمات</a>
-            <a href="#portfolio">نمونه کار</a>
-            <a href="#contact">ارتباط با من</a>
-        </nav>
+      <!-- Navigation bar -->
+      <nav class="navbar">
+        <a href="#home" class="active">خانه</a>
+        <a href="#about-me">درباره من</a>
+        <a href="#services">خدمات</a>
+        <a href="#portfolio">نمونه کار</a>
+        <a href="#contact">ارتباط با من</a>
+      </nav>
     </header>
+
+    <!-- ======= Home section ======= -->
     <section class="home" id="home">
-        <div class="home-content">
-            <h1>سلام من <span>رضام</span></h1>
-            <h3 class="text-animation">I'm a  <span></span></h3>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می‌باشد. کتاب‌های زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می‌طلبد</p>
-    
-            <div class="social-icons">
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
-                <a href="#"><i class='bx bxl-telegram' ></i></a>
-            </div>
-            <div class="btn-group">
-                <a href="#" class="btn">استخدام</a>
-                <a href="#contact" class="btn">ارتباط با من</a>
-            </div>
-           
-        </div>
-        <div class="home-img">
-            <img src="img/2.PNG" alt="">
-        </div>
-    </section>
-    <section class="education" id="education">
-        <h2 class="heading">تحصیلات</h2>
-        <div class="timeline-items">
+      <div class="home-content">
+        <h1>سلام من <span>رضام</span></h1>
+        <h3 class="text-animation">I'm a <span class="text-box"></span></h3>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">1403</div>
-                    <div class="timeline-content">
-                        <h3>داانشگاه</h3>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می‌باشد. کتاب‌های زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می‌طلبد</p>
-    
-                    </div>    
-            </div>
-             
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">1402</div>
-                    <div class="timeline-content">
-                        <h3>سربازی</h3>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می‌باشد. کتاب‌های زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می‌طلبد</p>
-    
-                    </div>    
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">1398</div>
-                    <div class="timeline-content">
-                        <h3>فریلنسری</h3>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می‌باشد. کتاب‌های زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می‌طلبد</p>
-    
-                    </div>    
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">1395</div>
-                    <div class="timeline-content">
-                        <h3>پروژه</h3>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می‌باشد. کتاب‌های زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می‌طلبد</p>
-    
-                    </div>    
-            </div>
+        <!-- Social media icons -->
+        <div class="social-icons">
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-telegram"></i></a>
         </div>
 
+        <!-- Buttons for hiring and contact -->
+        <div class="btn-group">
+          <a href="#services" class="btn">خدمات</a>
+          <a href="#contact" class="btn">ارتباط با من</a>
+        </div>
+      </div>
+
+      <!-- Home image section -->
+      <div class="home-img">
+        <img src="img/B612_20180323_111630.jpg" alt="" />
+      </div>
     </section>
 
+    <!-- ======= about-me section ======= -->
+    <section class="about-me" id="about-me">
+      <h2 class="heading">درباره من</h2>
+      <div class="timeline-items">
+        <!-- Timeline item -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">۱. مسیر من به دنیای توسعه وب</div>
+          <div class="timeline-content">
+            <p>
+              با داشتن مدرک کارشناسی در رشته مهندسی برق (قدرت)، مسیر حرفه‌ای من
+              از جایی متفاوت آغاز شد. اما علاقه‌ی شخصی به تکنولوژی و طراحی باعث
+              شد وارد دنیای توسعه وب شوم و تمرکزم را به طور کامل روی آن بگذارم.
+              با پشتکار، به‌صورت خودآموز و عملی، مهارت‌های فرانت‌اند را آموختم.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline item -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">۲. تخصص‌های من</div>
+          <div class="timeline-content">
+            <p>
+              در طول یک سال فعالیت فریلنس، تجربه‌ی کار با JavaScript (Vanilla) و
+              Vue.js را در پروژه‌های واقعی به‌دست آوردم. تمرکز من بر طراحی
+              رابط‌های کاربری واکنش‌گرا، قابل فهم، و کاربرپسند است. همچنین به
+              اصول طراحی UI/UX و نوشتن کد تمیز و بهینه اهمیت می‌دهم.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline item -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">۳. ویژگی‌های حرفه‌ای</div>
+          <div class="timeline-content">
+            <p>
+              یادگیری سریع، توجه به جزئیات، و اشتیاق برای رشد مداوم از ویژگی‌های
+              بارز من است. همیشه آماده‌ام تکنولوژی‌های جدید را یاد بگیرم و خودم
+              را با نیازهای پروژه یا تیم وفق بدهم. تجربه‌ی مطالعه منابع انگلیسی
+              و استفاده از مستندات بین‌المللی، مسیر یادگیری من را تسریع کرده
+              است.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline item -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">۴. هدف من</div>
+          <div class="timeline-content">
+            <p>
+              هدف من رشد مداوم در مسیر توسعه وب و مشارکت مؤثر در پروژه‌های واقعی
+              است. تلاش می‌کنم همواره در حال یادگیری تکنولوژی‌های جدید باشم و
+              بتوانم در کنار یک تیم حرفه‌ای، ارزش‌آفرینی کنم. تمرکز من روی نوشتن
+              کد تمیز، قابل نگهداری و بهبود تجربه‌ی کاربری است — چه در
+              موقعیت‌های فریلنس، چه در همکاری‌های بلندمدت و سازمانی.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Services section ======= -->
     <section class="services" id="services">
-        <h2 class="heading">خدمات</h2>
-        <div class="services-container">
-
-            <div class="services-box">
-                <div class="services-info">
-                    <h4>طراحی وب</h4>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می‌باشد. کتاب‌های زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می‌طلبد</p>
-
-                </div>
-            </div>
-            <div class="services-box">
-                <div class="services-info">
-                    <h4>توسعه وب</h4>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می‌باشد. کتاب‌های زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می‌طلبد</p>
-                    
-                </div>
-            </div>
-            <div class="services-box">
-                <div class="services-info">
-                    <h4>طراحی سایت</h4>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می‌باشد. کتاب‌های زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می‌طلبد</p>
-                    
-                </div>
-            </div>
-            <div class="services-box">
-                <div class="services-info">
-                    <h4>وردپرس</h4>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می‌باشد. کتاب‌های زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می‌طلبد</p>
-                    
-                </div>
-            </div>
-
-
-
+      <h2 class="heading">خدمات</h2>
+      <div class="services-container">
+        <!-- Service box -->
+        <div class="services-box">
+          <div class="services-info">
+            <h4>۱. توسعه رابط کاربری (UI)</h4>
+            <p>
+              پیاده‌سازی صفحات وب با استفاده از HTML، CSS و JavaScript (Vanilla)
+              با تمرکز بر کدنویسی تمیز، قابل نگهداری و ساختارمند. رعایت اصول
+              طراحی برای دستیابی به ظاهر حرفه‌ای و کاربردی.
+            </p>
+          </div>
         </div>
+
+        <!-- Service box -->
+        <div class="services-box">
+          <div class="services-info">
+            <h4>۲. توسعه با Vue.js</h4>
+            <p>
+              ساخت کامپوننت‌های تعاملی و مدیریت داده‌ها در پروژه‌های مبتنی بر
+              Vue.js. تجربه در کار با data binding، event handling و ارتباط با
+              APIها برای ساخت صفحات پویا.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service box -->
+        <div class="services-box">
+          <div class="services-info">
+            <h4>طراحی ریسپانسیو</h4>
+            <p>
+              تضمین نمایش و عملکرد صحیح وب‌سایت در انواع دستگاه‌ها (موبایل،
+              تبلت، دسکتاپ) و مرورگرهای مدرن. استفاده از Media Query و تکنیک‌های
+              CSS برای طراحی واکنش‌گرا و کاربرپسند.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service box -->
+        <div class="services-box">
+          <div class="services-info">
+            <h4>تبدیل طرح به کد و توجه به UX</h4>
+            <p>
+              تبدیل دقیق طرح‌های رابط کاربری (Adobe XD) به صفحات وب واقعی با دقت
+              بالا در جزئیات. رعایت اصول UI/UX برای ارائه‌ی تجربه‌ای روان و جذاب
+              برای کاربران.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- ======= Portfolio section ======= -->
     <section class="portfolio" id="portfolio">
-        <div class="portfolio-box">
-            <h2 class="heading">نمونه کارها</h2>
-            <div class="wrapper">
-                <div class="portfolio-item">
-                    <img src="img/2.PNG" alt="">3
-                    <h2>عنوان نمونه کار</h2>
-                    <div class="rating">
-                        <span>⭐⭐⭐⭐⭐</span>
-                    </div>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می‌باشد. کتاب‌های زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می‌طلبد</p>
-                    
-                </div>
-                <div class="portfolio-item">
-                    <img src="img/2.PNG" alt="">3
-                    <h2>عنوان نمونه کار</h2>
-                    <div class="rating">
-                        <span>⭐⭐⭐⭐⭐</span>
-                    </div>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می‌باشد. کتاب‌های زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می‌طلبد</p>
-                    
-                </div>
-                <div class="portfolio-item">
-                    <img src="img/2.PNG" alt="">3
-                    <h2>عنوان نمونه کار</h2>
-                    <div class="rating">
-                        <span>⭐⭐⭐⭐⭐</span>
-                    </div>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می‌باشد. کتاب‌های زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می‌طلبد</p>
-                    
-                </div>
+      <div class="portfolio-box">
+        <h2 class="heading">نمونه کارها</h2>
+
+        <div class="swiper portfolio-slider">
+          <div class="swiper-wrapper">
+            <!-- نمونه‌کار -->
+            <div class="swiper-slide">
+              <a
+                href="https://demo-link.com"
+                target="_blank"
+                class="portfolio-link"
+              ></a>
+              <div class="portfolio-item">
+                <img src="img/Personal.PNG" alt="" />
+                <h2>سایت رزومه</h2>
+
+                <p>سایت معرفی رزومه و خدمات</p>
+              </div>
             </div>
+
+            <!-- نمونه‌های بیشتر... -->
+            <div class="swiper-slide">
+              <div class="portfolio-item">
+                <img src="img/mentor.PNG" alt="" />
+                <h2>منتورینگ</h2>
+
+                <p>سایت فروش خدمات و آموزش</p>
+              </div>
+            </div>
+
+            <!-- نمونه‌های بیشتر... -->
+            <div class="swiper-slide">
+              <div class="portfolio-item">
+                <img src="img/Shop.PNG" alt="" />
+                <h2>فروشگاه</h2>
+
+                <p>سایت فروشگاهی مناسب فروش محصولات دیجیتال</p>
+              </div>
+            </div>
+
+            <!-- نمونه‌های بیشتر... -->
+            <div class="swiper-slide">
+              <div class="portfolio-item">
+                <img src="img/toDoList.PNG" alt="" />
+                <h2>To Do List</h2>
+
+                <p>انجام تسک های روزانه</p>
+              </div>
+            </div>
+
+            <!-- نمونه‌های بیشتر... -->
+            <div class="swiper-slide">
+              <div class="portfolio-item">
+                <img src="img/Movie.PNG" alt="" />
+                <h2>فیلم و سریال</h2>
+
+                <p>سایتی مناسب برای فیلم و سریال</p>
+              </div>
+            </div>
+
+            <!-- نمونه‌های بیشتر... -->
+            <div class="swiper-slide">
+              <div class="portfolio-item">
+                <img src="img/githubFinder.PNG" alt="" />
+                <h2>Search engine</h2>
+
+                <p>جست و جوگر گیت هاب</p>
+              </div>
+            </div>
+            <!-- ... -->
+            <!-- نمونه‌های بیشتر... -->
+            <div class="swiper-slide">
+              <div class="portfolio-item">
+                <img src="img/hosting.PNG" alt="" />
+                <h2>Hosting</h2>
+
+                <p>سایتی مناسب برای میزبانی وب</p>
+              </div>
+            </div>
+            <!-- ... -->
+          </div>
+
+          <!-- دکمه‌های کنترل -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
+      </div>
     </section>
 
-<section class="contact" id="contact">
-    <h2 class="heading">ارتباط با <span>من</span></h2>
+    <!-- ======= Contact section ======= -->
+    <section class="contact" id="contact">
+      <h2 class="heading">ارتباط با <span>من</span></h2>
 
-    <form action="">
+      <!-- Contact form -->
+      <form action="">
         <div class="input-group">
-            <div class="input-box">
-                <input type="text" placeholder="نام و نام خانوادگی">
-                <input type="email" placeholder="ایمیل">
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="شماره تلفن">
-                <input type="text" placeholder="موضوع">
-            </div>
+          <div class="input-box">
+            <input type="text" placeholder="نام و نام خانوادگی" />
+            <input type="email" placeholder="ایمیل" />
+          </div>
+          <div class="input-box">
+            <input type="number" placeholder="شماره تلفن" />
+            <input type="text" placeholder="موضوع" />
+          </div>
         </div>
         <div class="input-group-2">
-            <textarea name="" id="" cols="30" rows="10" placeholder="پیام شما"></textarea>
-            <input type="submit" value="ارسال پیام" class="btn">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="پیام شما"
+          ></textarea>
+          <input type="submit" value="ارسال پیام" class="btn" />
         </div>
+      </form>
+    </section>
 
-    </form>
-</section>
-<footer class="footer">
-    <div class="social">
-        <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
-                <a href="#"><i class='bx bxl-telegram' ></i></a>
-    </div>
-    <ul class="list">
-        <li>
-            <a href="">Home</a>
-        </li>
-        <li>
-            <a href="">Education</a>
-        </li>
-        <li>
-            <a href="">Services</a>
-        </li>
-        <li>
-            <a href="">Portfolio</a>
-        </li>
-        <li>
-            <a href="">Contact</a>
-        </li>
-    </ul>
-    <p class="copyright">
-        ©2025 Reza Ghanbari | All Rights Reserved
-    </p>
-</footer>
+    <!-- ======= Footer section ======= -->
+    <footer class="footer">
+      <!-- Social icons in footer -->
+      <div class="social">
+        <a href="#"><i class="bx bxl-linkedin"></i></a>
+        <a href="#"><i class="bx bxl-github"></i></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+        <a href="#"><i class="bx bxl-telegram"></i></a>
+      </div>
 
+      <!-- Footer links -->
+      <ul class="list">
+        <li><a href="#">خانه</a></li>
+        <li><a href="#about-me">درباره من</a></li>
+        <li><a href="#services">خدمات</a></li>
+        <li><a href="#portfolio">نمونه کار</a></li>
+        <li><a href="#contact">ارتباط با من</a></li>
+      </ul>
+
+      <!-- Copyright text -->
+      <p class="copyright">©2025 Reza Ghanbari | All Rights Reserved</p>
+    </footer>
+
+    <!-- Link to external JS file -->
     <script src="js/script.js"></script>
 
-</body>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".portfolio-slider", {
+        loop: true,
+        grabCursor: true,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
 </html>
