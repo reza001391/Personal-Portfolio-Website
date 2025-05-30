@@ -39,3 +39,6 @@ window.addEventListener("resize", () => {
   // اگر Swiper دارید و تنظیماتش تغییر می‌کنه، دوباره initialize کنید (در صورت نیاز)
   swiper.update();
 });
+document.querySelector(".contact form").addEventListener("click", function (e) {
+  e.stopPropagation();
+});
